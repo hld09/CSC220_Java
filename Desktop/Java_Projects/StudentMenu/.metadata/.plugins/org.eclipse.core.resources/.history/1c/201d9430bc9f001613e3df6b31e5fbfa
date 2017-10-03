@@ -1,0 +1,11 @@
+package Studentmenu;
+
+public class myDelete {
+	
+	public static void Delete()
+   	{
+   		System.out.println("I am using New Delete Method");
+   		
+   	}
+
+}

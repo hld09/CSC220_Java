@@ -1,0 +1,13 @@
+package Studentmenu;
+
+public class Delete {
+	public static void Delete()
+		{
+		System.out.println("Which person would you like to delete from the list?");
+		Scanner nameinput = new Scanner(System.in);
+		String name = nameinput.nextLine();
+		
+		int[] a = {1,2,3,4};
+		boolean contains = IntStream.of(a).anyMatch(x -> x == 4);		
+		}
+}

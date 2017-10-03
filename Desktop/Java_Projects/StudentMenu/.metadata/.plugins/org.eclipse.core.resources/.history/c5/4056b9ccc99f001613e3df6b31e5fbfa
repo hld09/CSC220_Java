@@ -1,0 +1,152 @@
+package Studentmenu;
+import java.util.*;
+
+public class myAddtest {
+	//Homework 4 information
+	// Sample Student record definition and operations
+	
+	    private String m_name;
+	    private int m_age;
+	    private String m_course;
+	    private String m_year;
+	    private String m_section;
+
+	    public  myAddtest( String name, int age, String course, String year, String section )
+	    {
+	        m_name = name;
+	        m_age = age;
+	        m_course = course;
+	        m_year = year;
+	        m_section = section;
+	    }
+
+	    public String getName()
+	    {
+	        return m_name;
+	    }
+
+	    public int getAge()
+	    {
+	        return m_age;
+	    }
+
+	    public String getCourse()
+	    {
+	        return m_course;
+	    }
+
+	    public String getYear()
+	    {
+	        return m_year;
+	    }
+
+	    public String getSection()
+	    {
+	        return m_section;
+	    }
+
+	    public String toString()
+	    {
+	        return "name: " + m_name + ", age: " + m_age + 
+	               ", course: " + m_course + ", year: " + m_year +
+	               ", section: " + m_section;
+	    }
+
+
+		public static void Add()
+	   	{	 
+			{
+	       ArrayList<myAddtest> students = new ArrayList<myAddtest>();
+	       Scanner input = new Scanner(System.in);
+
+	       //create student record
+	       String name="Jack";
+	       int age=25;
+	       String course="CSC570";
+	       String year="2015";
+	       String section="002";
+
+
+	       myAddtest student = new myAddtest(name, age, course, year, section);
+	               students.add(student);
+	               
+	               
+	               System.out.println("Students:");
+	             for (myAddtest astudent : students)
+	              {
+	                   System.out.println(astudent);
+	               }    
+	               System.out.println("end of list");
+
+
+	             //create student record
+	               name="Mary";
+	               age=66;
+	               course="CSc521";
+	               year="2013";
+	               section="111";
+	               student = new myAddtest(name, age, course, year, section);
+	               
+	               students.add(student);
+
+	                for (myAddtest astudent : students)
+	                {
+	                     System.out.println(astudent);
+	                 }  
+	                System.out.println("end of list");
+
+	                // Update record
+	                students.get(1).m_course="Computer Science";
+
+	     
+	                //Delete record
+	              students.remove(0);
+	                
+	                
+	                
+	                for (myAddtest astudent : students)
+	                {
+	                     System.out.println(astudent);
+	                 }  
+	                System.out.println("end of list");
+			}
+			}
+	                
+
+	        	public static void Search (ArrayList <String> students) {	 
+	   	        System.out.println("Enter the name of student you are searching for:");
+	   	        
+	   	        	   
+	   	        	Scanner studentinput1 = new Scanner(System.in);
+	   	        	String studentname = studentinput1.nextLine();
+	   	        		
+	   	         	   String str = "";
+	   	       	  	            	   
+	   	         	   int found=0;
+	   	         	       	   
+					for (int i=0; i<=students.size()-1; i++){
+	   	         		   str=students.get(i).name;
+	   	         		   
+	   	         	 //  if (str.equals("Mary")){ // 
+	   	         		   
+	   	         		  if (str.equals(studentname)){ //    
+	   	         		        		   
+	   	         			   found=1;
+	   	         			   break;
+	   	         		 }
+	   	         	   }
+	   	         	   
+	   	              
+	   	                if (found==1) System.out.println("Student is in the list");
+	   	                else System.out.println("Student is not in the list");
+	   	        	   	}	
+	        	
+	   	
+//	        
+	                
+	               
+
+
+	    
+	    } // end of Student class
+

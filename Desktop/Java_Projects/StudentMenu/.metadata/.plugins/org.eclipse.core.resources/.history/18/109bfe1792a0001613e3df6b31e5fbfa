@@ -1,0 +1,25 @@
+package Studentmenu;
+
+public class studentarray2 {
+    public studentarray2(){
+        run();
+    }
+    private void run(){
+        buildArray();
+        printArray();
+    }
+    private void buildArray(){
+        StudentArray[] inventory = new StudentArray[5];
+        inventory[0] = new StudentArray ("Meet the Fockers", 5);
+        inventory[1] = new StudentArray ("Blade" , 3);
+        inventory[2] = new StudentArray ("Spiderman 2 " , 4);
+        inventory[3] = new StudentArray ("Finding Nemo" , 3);
+        inventory[4] = new StudentArray ("Star Wars II" , 1);
+    }
+    private void printArray(StudentArray[] inventory){
+    	for (int i = 0; i < inventory.length; i++){
+    	System.out.println(inventory[i]);
+    	}
+    }
+}
+

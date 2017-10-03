@@ -1,0 +1,15 @@
+package Studentmenu;
+
+public class viewall {
+    public static void (String argsp[]) {
+
+	System.out.println("Student List:");
+
+  for (Studentarray astudent : students)
+   {
+        System.out.println(astudent);
+    }    
+  
+   System.out.println("end of list");
+    }
+}

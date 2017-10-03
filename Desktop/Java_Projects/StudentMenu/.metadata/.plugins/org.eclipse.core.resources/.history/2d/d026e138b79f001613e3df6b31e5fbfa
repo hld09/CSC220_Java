@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Employee/src/employee"/>
+	<classpathentry kind="src" path="GradeBook/src"/>
+	<classpathentry kind="src" path="Menu"/>
+	<classpathentry kind="src" path="myemployee/src"/>
+	<classpathentry kind="src" path="overloading/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Animal/bin"/>
+</classpath>

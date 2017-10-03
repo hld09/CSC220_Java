@@ -1,0 +1,187 @@
+package Studentmenu;
+
+import java.util.*;
+
+public class StudentArray
+{	
+	static ArrayList<String> allstudents = new ArrayList<String>();
+    public static int [] found={0};
+
+
+	public static void add()
+    {
+
+	System.out.println("How many students would you like to add?");
+	Scanner totalinput = new Scanner(System.in);
+	int totalnum = totalinput.nextInt();
+	int count = 0;
+	
+	while(count < totalnum){
+
+		
+	
+	System.out.println("Name:");
+	Scanner nameinput = new Scanner(System.in);
+	String Name = nameinput.nextLine();
+	
+	System.out.println("ID Number:");
+	Scanner idinput = new Scanner(System.in);
+	String Id = idinput.nextLine();
+
+	System.out.println("Major:");
+	Scanner majorinput = new Scanner(System.in);
+	String Major = majorinput.nextLine();	String Age="19";
+	
+	
+	System.out.println("Name:");
+	Scanner minorinput = new Scanner(System.in);
+	String Minor = minorinput.nextLine();
+	
+	System.out.println("Class:");
+	Scanner classinput = new Scanner(System.in);
+	String Rank = classinput.nextLine();
+	
+	System.out.println("GPA:");
+	Scanner gpainput = new Scanner(System.in);
+	String GPA = gpainput.nextLine();
+
+	String student="Name: "+Name+" ID #: "+Id+" Age: "+Age+" Major: "+Major+" Minor: "+Minor+" Rank: "+Rank+" GPA: "+GPA+"\n"+"\n";
+//	allstudents.add(student);
+//	System.out.println(allstudents);
+
+    	allstudents.add(student);    	
+        count=count+1;
+    	}   
+	System.out.println(allstudents);
+
+    }
+	
+	public static void viewall()
+    {
+		System.out.println(allstudents);
+    }
+	 public static void findstudent(String word)
+	  	{
+			String str;
+	  	for (int i=0; i<=allstudents.size()-1; i++){
+	      		   str=allstudents.get(i).word;
+	      		  
+	      	   	if (str.equals(word)){
+	      		   found[0]=1;
+	      		   break;
+	      		   }
+	      		   
+	      	  	 }
+	  	}  
+	public static void delete()
+    {
+
+		System.out.println("Who would you like to delete?");
+		Scanner deletename = new Scanner(System.in);
+		String word = deletename.nextLine();
+
+		int position = -1;
+		position = allstudents.indexOf(word);
+		
+		 found[0]=0;
+         findstudent(word);
+         if (found[0]==1)
+         {
+        	 //swap index of found array with the last in the array
+        	 //delete last index of the array
+         }
+        
+    }
+	public static void search()
+    {
+		System.out.println("Who would you like to find?");
+		Scanner findname = new Scanner(System.in);
+		String findperson = findname.nextLine();
+
+		int position = -1;
+		position = allstudents.indexOf(findperson);
+		
+		 found[0]=0;
+         findstudent(findperson);
+         if (found[0]==1)
+         {
+        	System.out.println("They are in the list.");
+        	System.out.println(allstudents);
+         }
+         else{
+        	 System.out.println("They are not in the list. Please try again.");
+         }
+    }
+	public static void copy()
+    {
+		System.out.println("Whose info would you like to copy?");
+		Scanner findname = new Scanner(System.in);
+		String findperson = findname.nextLine();
+
+		int position = -1;
+		position = allstudents.indexOf(findperson);
+		
+		 found[0]=0;
+         findstudent(findperson);
+         if (found[0]==1)
+         {
+        	ArrayList<String> emptylist = new ArrayList<String>();
+        	emptylist.add(person)
+         }
+         else{
+        	 System.out.println("They are not in the list. Please try again.");
+         }
+    }
+	public static void update()
+    {
+		System.out.println("Who would you like to update?");
+		Scanner updatename = new Scanner(System.in);
+		String update = updatename.nextLine();
+
+		int position = -1;
+		position = allstudents.indexOf(word);
+		
+		 found[0]=0;
+         findstudent(word);
+         if (found[0]==1)
+         {
+        	 //swap index of found array with the last in the array
+        	 //delete last index of the array
+        	 
+        	 for (allstudents.indexOf(position))
+        	 {
+        	 	System.out.println("Name:");
+        		Scanner nameinput = new Scanner(System.in);
+        		String Name = nameinput.nextLine();
+        		
+        		System.out.println("ID Number:");
+        		Scanner idinput = new Scanner(System.in);
+        		String Id = idinput.nextLine();
+
+        		System.out.println("Major:");
+        		Scanner majorinput = new Scanner(System.in);
+        		String Major = majorinput.nextLine();	String Age="19";
+        		
+        		
+        		System.out.println("Name:");
+        		Scanner minorinput = new Scanner(System.in);
+        		String Minor = minorinput.nextLine();
+        		
+        		System.out.println("Class:");
+        		Scanner classinput = new Scanner(System.in);
+        		String Rank = classinput.nextLine();
+        		
+        		System.out.println("GPA:");
+        		Scanner gpainput = new Scanner(System.in);
+        		String GPA = gpainput.nextLine();
+
+        		String student="Name: "+Name+" ID #: "+Id+" Age: "+Age+" Major: "+Major+" Minor: "+Minor+" Rank: "+Rank+" GPA: "+GPA+"\n"+"\n";
+//        		allstudents.add(student);
+        		System.out.println(allstudents.indexOf(position));
+        	 }
+         }
+    }
+}
+	
+	
+

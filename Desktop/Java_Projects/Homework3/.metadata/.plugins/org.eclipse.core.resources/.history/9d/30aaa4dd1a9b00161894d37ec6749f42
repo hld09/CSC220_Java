@@ -1,0 +1,82 @@
+
+import java.util.*;
+import java.io.*;
+
+package homework3;
+public class Homework3 {
+	public static void main(String[] args){
+
+		
+	System.out.println("Please enter your name:");
+	Scanner nameinput = new Scanner(System.in);
+	String student_name = nameinput.nextLine();
+	
+	System.out.println("Please enter your id:");
+	Scanner idinput = new Scanner(System.in);
+	Double idnumber = idinput.nextDouble();
+
+	System.out.println("Please enter your address:");
+	Scanner addressinput = new Scanner(System.in);
+	String address = addressinput.nextLine();
+
+	System.out.println("Please enter your age:");
+	Scanner ageinput = new Scanner(System.in);
+	Float age = ageinput.nextFloat();
+
+	
+	
+//	var student = {
+//			name:: student_name,
+//			id: student_id;
+//			address: student_adress;
+//			age: student_age; 
+//			major: student_major; 
+//			minor: student_minor;
+//			year: student_year;
+//			gpa: student_gpa;
+			}
+	}
+}
+
+//
+//
+//Create and operate on a list of students’ records
+//Student’s record contains attributes including
+//Name, ID, Address, Age, Major, Minor, Classification (ex: Freshman,
+//sophomore, Junior, Senior, Graduate) , GPA, and any other attribute(s) that you
+//like to include.
+
+//Create a Menu with the following options:
+//0. To Quit/Exit.
+//1. To Add a new student into the list.
+//2. To View students’ list.
+//2.1 View entire list
+//2.2 View on specified major
+//2.3 View on specified classification
+//3. To Delete a student from the list.
+//4. To Update a student’s record in the list.
+//5. To Search for a student’s record.
+//6. To Copy a list.
+
+//Implementation Requirements:
+//Define a FindStudent method to be used for Add, Delete,
+//update, Search methods.
+//For ADD:
+//Duplicate record is not allowed. Student’s name is assumed to be the key.
+//For Search Option:
+//Student can be searched based on Name, or ID.
+//Method FindStudent can be overloaded:
+//FindStudent(stID) , FindStudent(stName)
+//For Delete Option:
+//A record is physically deleted from the list.
+//- Output should be user friendly.
+//- Appropriate variables naming; stRecord, stname, stmajor,…
+//-
+
+//- Use appropriate heading for your outputs/messages
+//EX: Student to be deleted is not in the list, record xxx is already in the list,
+//Student to be added is already in the list,…
+//- Run your program with different data to cover all possible cases:
+//- Record found, record is not in the list, duplicate record,….
+//-
+//- Submit your programs, outputs to the blackboard

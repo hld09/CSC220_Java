@@ -1,0 +1,21 @@
+package Studentmenu;
+
+import java.util.ArrayList;
+
+public class viewall {
+
+	public static void Students()
+   	{
+	   	System.out.println("Student List:");
+
+    ArrayList<Studentarray> students = new ArrayList<Studentarray>();
+    {
+  for (Studentarray astudent : students)
+   {
+        System.out.println(astudent);
+    }    
+   System.out.println("end of list");
+	}
+   	}
+}
+	

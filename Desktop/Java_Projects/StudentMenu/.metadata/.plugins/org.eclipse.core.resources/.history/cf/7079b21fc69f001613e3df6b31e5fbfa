@@ -1,0 +1,8 @@
+package Studentmenu;
+
+public class Delete {
+	public static void Delete()
+   	{
+
+   	}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Homework1/src"/>
+	<classpathentry kind="src" path="Homework2/src"/>
+	<classpathentry kind="src" path="Homework3/Homework3/src"/>
+	<classpathentry kind="src" path="StudentMenu/EncapsulationDemo/src"/>
+	<classpathentry kind="src" path="StudentMenu/StudentMenu/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Homework1/bin"/>
+</classpath>

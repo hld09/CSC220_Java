@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Homework1 {
+	public static void main(String[] args) {
+		System.out.println("Please enter your name:");
+		Scanner nameinput = new Scanner(System.in);
+		String Name = nameinput.nextLine();
+		
+		System.out.println("Please enter your major:");
+		Scanner majorinput = new Scanner(System.in);
+		String Major = majorinput.nextLine();
+		System.out.print( "Your major is: "+ Major );
+
+	}
+}

@@ -1,0 +1,12 @@
+package Studentmenu;
+
+public class viewall {
+
+    System.out.println("Students:");
+  for (Studentarray astudent : students)
+   {
+        System.out.println(astudent);
+    }    
+    System.out.println("end of list");
+
+}

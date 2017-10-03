@@ -1,0 +1,38 @@
+package Studentmenu;
+import java.util.*;
+
+public class myAdd {
+
+	public static void Add()
+   	{
+   		System.out.println("ADDING STUDENT");
+        ArrayList<Studentarray> students = new ArrayList<Studentarray>();
+//        Scanner input = new Scanner(System.in);
+
+        //create student record
+
+		
+		System.out.println("Please enter your name:");
+		Scanner nameinput = new Scanner(System.in);
+		String name = nameinput.nextLine();
+
+		System.out.println("Please enter your age:");
+		Scanner ageinput = new Scanner(System.in);
+		
+        int age=ageinput.nextInt();
+        String course="CSC570";
+        String year="2015";
+        String section="002";
+        System.out.println("");
+
+        Studentarray student = new Studentarray(name, age, course, year, section);
+        students.add(student);
+               
+        System.out.println("Students:");
+      for (Studentarray astudent : students)
+       {
+            System.out.println(astudent);
+        }    
+        System.out.println("end of list");
+   	}
+}

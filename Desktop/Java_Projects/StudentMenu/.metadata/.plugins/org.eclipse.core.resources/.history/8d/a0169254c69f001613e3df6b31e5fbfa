@@ -1,0 +1,16 @@
+package Studentmenu;
+
+public class Delete {
+	public static void Delete()
+		{
+		System.out.println("Which person would you like to delete from the list?");
+		nameinput = new Scanner(System.in);
+		String name = nameinput.nextLine();
+		
+		String fieldsToInclude = name;
+
+		if ( ArrayUtils.contains( fieldsToInclude, "id" ) ) {
+		    // Do some stuff.
+		}
+		}
+}

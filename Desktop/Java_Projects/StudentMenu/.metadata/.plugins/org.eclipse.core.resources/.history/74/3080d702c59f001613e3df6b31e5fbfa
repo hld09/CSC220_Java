@@ -1,0 +1,32 @@
+package Studentmenu;
+
+import java.util.Scanner;
+
+public class Search {
+
+	System.out.println("Please enter the name of the student you're looking for:");
+	Scanner studentnameinput = new Scanner(System.in);
+	String studentname = studentnameinput.nextLine();
+	
+	String str = "";
+	            	   
+	int found=0;
+    	   
+	for (int i=0; i<=students.size()-1; i++){
+			str=students.get(i).m_name;
+	   
+
+//  if (str.equals("Mary")){ // 
+	   
+	  if (str.equals("Bob")){ //    
+	        		   
+		   found=1;
+		   break;
+	 }
+}
+
+
+if (found==1) System.out.println("Student is in the list");
+else System.out.println("Student is not in the list");
+
+}

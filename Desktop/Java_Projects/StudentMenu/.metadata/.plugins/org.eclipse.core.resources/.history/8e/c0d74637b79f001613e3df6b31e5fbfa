@@ -1,0 +1,115 @@
+package mymenu;
+
+	import java.util.Scanner;
+
+	public class MyMenu
+
+	{ 
+
+	       public static void main(String[] args)
+
+	       {
+	    	   Scanner input = new Scanner(System.in);
+
+			int option;
+		
+
+	              do
+			{
+			System.out.println("Option 0:	Exit");
+			System.out.println("Option 1:	Add");
+			System.out.println("Option 2:	Delete");
+			System.out.println("Option 3:	Change");
+			System.out.println("Option 4:	Display");
+			System.out.println("Option 5:	Search");
+			System.out.println("Option 6:	Sortd");
+			System.out.println("Which Option?");
+			option=input.nextInt();
+			
+			switch(option)
+			{
+			case 0: break;
+			case 1: 
+				{
+					Add();
+					break;
+				}
+			case 2:
+			{
+					Delete();
+					break;
+					
+				}
+			case 3:
+			{
+					Change();
+					break;
+					
+				}
+			
+			case 4:
+			{
+					Display();
+					break;
+					
+				}
+			case 5:
+			{
+					Search();
+					break;
+					
+				}
+			case 6:
+			{
+					Sort();
+					break;
+					
+				}
+			
+			
+			default:
+			{
+				System.out.println("invalid option");
+			}
+			
+				
+			}// end of switch
+			
+			} while (option !=0);
+
+	 }// end of Main
+	       public static void Add()
+	       {
+	    	   System.out.println("I am using ADD Method");
+	       }
+	
+	       	public static void Delete()
+	       	{
+	       		System.out.println("I am using Delete Method");
+	       		
+	       	}
+
+	       	public static void Change()
+	       	{
+	       		System.out.println("I am using Change Method");
+	       		
+	       	}
+	       	
+	       	public static void Display()
+	       	{
+	       		System.out.println("I am using Display Method");
+	       		
+	       	}
+	       	
+	       	public static void Search()
+	       	{
+	       		System.out.println("I am using Search Method");
+	       		
+	       	}
+	       	
+	       	public static void Sort()
+	       	{
+	       		System.out.println("I am using Sort Method");
+	       		
+	       	}
+}// end of class MyMenu

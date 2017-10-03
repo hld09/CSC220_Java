@@ -1,0 +1,59 @@
+package Studentmenu;
+import java.util.*;
+
+public class myAdd {
+
+	public class students {
+
+		public static void add(Studentarray student) {
+			// TODO Auto-generated method stub
+			
+		}
+
+	}
+
+	public static void Add()
+   	{
+   		System.out.println("ADDING STUDENT");
+//        Scanner input = new Scanner(System.in);
+
+        //create student record
+
+		
+		System.out.println("Please enter your name:");
+		Scanner nameinput = new Scanner(System.in);
+		String name = nameinput.nextLine();
+
+		System.out.println("Please enter your age:");
+		Scanner ageinput = new Scanner(System.in);
+        int age=ageinput.nextInt();
+    	
+		System.out.println("Please enter your course:");
+		Scanner courseinput = new Scanner(System.in);
+		String course = courseinput.nextLine();
+
+		System.out.println("Please enter your section:");
+		Scanner sectioninput = new Scanner(System.in);
+		String section = sectioninput.nextLine();
+
+		System.out.println("Please enter your grade (freshman / sophomore / junior / senior):");
+		Scanner yearinput = new Scanner(System.in);
+		String year = yearinput.nextLine();
+	
+        System.out.println("");
+
+        Studentarray student = new Studentarray(name, age, course, section, year);
+        Studentarray.add(student);
+
+        // <----------------------------------->       
+        
+        System.out.println("Students:");
+       for (Studentarray astudent : students)
+       {
+            System.out.println(astudent);
+        }    
+        System.out.println("end of list");
+        //DEBUGGING LINE THAT PRINTS STUDENT LIST SO FAR
+
+   	}
+}
